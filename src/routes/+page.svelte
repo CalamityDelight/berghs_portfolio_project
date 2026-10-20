@@ -1,49 +1,71 @@
 <svelte:head>
-  <title>Sam Riviera</title>
+  <title>Sam Rivera</title>
 </svelte:head>
 
-<header>
-  <nav>
-    <a href="/">Home</a>ß
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-  </nav>
-</header>
+<div class="page">
 
-<main>
-  <section class="intro">
-    <h1>Name Surname</h1>
-    <p class="profession">Profession</p>
-    <p>A short sentence about what this person does and who they do it for.</p>
+  <header>
+    <p class="logo">Sam Rivera</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- hero -->
+  <section class="hero">
+    <p class="small">Set & spatial designer - Stockholm</p>
+    <h1>Sam Rivera</h1>
+    <p>I design theatre sets, festival installations and exhibitions using reused materials.</p>
   </section>
 
-  <section class="work">
+  <!-- about -->
+  <section id="about" class="about">
+    <img src="https://picsum.photos/seed/sam/500/600" alt="Sam Rivera">
+    <div>
+      <h2>About Sam</h2>
+      <p>Sam is a set and spatial designer from Stockholm. He worked as a carpenter before he started studying scenography, and he still builds most things himself in his workshop.</p>
+      <p>He works with theatres, festivals and exhibition organisers. Almost everything he builds is made from old materials like floorboards, sails and window frames.</p>
+    </div>
+  </section>
+
+  <!-- work -->
+  <section id="work">
     <h2>Selected work</h2>
 
-    <article class="project">
-      <img src="https://placehold.co/600x400" alt="Describe the image">
-      <h3>Project one</h3>
-      <p>A short description of the project.</p>
-    </article>
+    <div class="project">
+      <img class="big-img" src="https://picsum.photos/seed/theatre/1200/500" alt="The Salt House">
+      <h3>The Salt House</h3>
+      <p class="small">Theatre set - 2026</p>
 
-    <article class="project">
-      <img src="https://placehold.co/600x400" alt="Describe the image">
-      <h3>Project two</h3>
-      <p>A short description of the project.</p>
-    </article>
-
-    <article class="project">
-      <img src="https://placehold.co/600x400" alt="Describe the image">
-      <h3>Project three</h3>
-      <p>A short description of the project.</p>
-    </article>
+      <div class="project-info">
+        <img src="https://picsum.photos/seed/sketch1/400/300" alt="Sketch">
+        <div>
+          <p>A set for a family drama in a fishing village. The room slowly gets taken apart during the play until only the floor is left.</p>
+          <ul>
+            <li>Floor: old oak boards from a school</li>
+            <li>Walls: old window frames</li>
+            <li>Curtains: leftover linen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
-</main>
 
-<footer>
-  <p>© 2026 Name Surname</p>
-</footer>
+  <!-- contact -->
+  <section id="contact" class="contact">
+    <h2>Want to work together?</h2>
+    <p>Sam is open for projects with theatres, festivals and exhibitions.</p>
+    <a href="mailto:hello@samrivera.se">hello@samrivera.se</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Sam Rivera</p>
+  </footer>
+
+</div>
 
 <style>
-  /* your CSS goes here */
+
 </style>
