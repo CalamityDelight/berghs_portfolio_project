@@ -1,10 +1,10 @@
 <svelte:head>
-  <title>Name – Portfolio</title>
+  <title>Sam Riviera</title>
 </svelte:head>
 
 <header>
   <nav>
-    <a href="/">Home</a>
+    <a href="/">Home</a>ß
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
   </nav>
