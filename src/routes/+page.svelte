@@ -1,21 +1,23 @@
+<script>
+  import Header from '$lib/Header.svelte';
+  import Footer from '$lib/Footer.svelte';
+  // asset() and resolve() add the right start of the address,
+  // so images and links also work on GitHub Pages
+  import { asset, resolve } from '$app/paths';
+</script>
+
 <svelte:head>
-  <title>Sam Rivera</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Sam Rivera – Set & spatial designer</title>
 </svelte:head>
 
 <div class="page">
 
-  <header>
-    <p class="logo">Sam Rivera</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <Header />
+
+  <main>
 
   <!-- hero -->
-  <section class="hero">
+  <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('{asset('/bilder/hero.png')}');">
     <p class="small">Set & spatial designer - Stockholm</p>
     <h1>Sam Rivera</h1>
     <p>I design theatre sets, festival installations and exhibitions using reused materials.</p>
@@ -23,7 +25,7 @@
 
   <!-- about -->
   <section id="about" class="about">
-    <img src="bilder/sam.png" alt="Sam Rivera">
+    <img src="bilder/sam.png" alt="Portrait of Sam Rivera outdoors in a dusty work t-shirt">
     <div>
       <h2>About Sam</h2>
       <p>Sam is a set and spatial designer from Stockholm. He worked as a carpenter before he started studying scenography, and he still builds most things himself in his workshop.</p>
@@ -37,7 +39,7 @@
     <h2>Selected work</h2>
 
     <div class="project">
-      <img class="big-img" src="bilder/salt-house.png" alt="The Salt House">
+      <img class="big-img" src="bilder/salt-house.png" alt="The Salt House set on stage: a wooden room lit by warm lamps">
       <h3>The Salt House</h3>
       <p class="small">Theatre set - 2026</p>
 
@@ -55,7 +57,7 @@
     </div>
 
     <div class="project">
-      <img class="big-img" src="bilder/pavilion.png" alt="Driftwood Pavilion">
+      <img class="big-img" src="bilder/pavilion.png" alt="Driftwood Pavilion at a festival, with a roof made of old sails">
       <h3>Driftwood Pavilion</h3>
       <p class="small">Festival installation - 2025</p>
 
@@ -73,7 +75,7 @@
     </div>
 
     <div class="project">
-      <img class="big-img" src="bilder/second-life.png" alt="Second Life">
+      <img class="big-img" src="bilder/second-life.png" alt="Second Life exhibition with cardboard columns holding objects">
       <h3>Second Life</h3>
       <p class="small">Pop-up exhibition - 2025</p>
 
@@ -95,34 +97,18 @@
   <section id="contact" class="contact">
     <h2>Want to work together?</h2>
     <p>Sam is open for projects with theatres, festivals and exhibitions.</p>
-    <a href="mailto:hello@samrivera.se">hello@samrivera.se</a>
+    <a class="button" href={resolve('/contact')}>Send Sam a message</a>
   </section>
 
-  <footer>
-    <p>© 2026 Sam Rivera</p>
-  </footer>
+  </main>
+
+  <Footer />
 
 </div>
 
 <style>
-  .page {
-    background-color: #111;
-    color: #eee;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-
-  h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight: normal;
-  }
-
   h2 {
     font-size: 40px;
-  }
-
-  a {
-    color: #eee;
   }
 
   .small {
@@ -137,46 +123,13 @@
   }
 
   /* spacing */
-  header {
-    padding: 20px 40px;
-  }
-
   section {
     padding: 80px 40px;
   }
 
-  footer {
-    padding: 20px;
-    color: #666;
-  }
-
-  /* remove the white edge around the page */
-  :global(body) {
-    margin: 0;
-  }
-
-  /* header: logo to the left, menu to the right */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  }
-
-  .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-  }
-
-  nav a {
-    margin-left: 20px;
-    text-decoration: none;
-  }
-
-  /* hero: big background image, text at the bottom */
+  /* hero: big background image (set in the HTML), text at the bottom */
   .hero {
     min-height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('/bilder/hero.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -235,13 +188,22 @@
     background-color: #1c1c1c;
   }
 
-  .contact a {
-    font-size: 24px;
+  .button {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 18px;
+    color: #111;
+    background-color: #e8c48a;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .button:hover {
+    background-color: #f3d9ab;
   }
 
   /* small screens: put things on top of each other */
   @media (max-width: 700px) {
-    header,
     section {
       padding-left: 16px;
       padding-right: 16px;
