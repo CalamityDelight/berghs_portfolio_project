@@ -42,7 +42,7 @@
       <p class="small">Theatre set - 2026</p>
 
       <div class="project-info">
-        <img src="bilder/saltsketch.png" alt="Sketch of The Salt House">
+        <img src="bilder/salt-house-sketch.png" alt="Sketch of The Salt House">
         <div>
           <p>A set for a family drama in a fishing village. The room slowly gets taken apart during the play until only the floor is left.</p>
           <ul>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="project">
-      <img class="big-img" src="bilder/paviliong.png" alt="Driftwood Pavilion">
+      <img class="big-img" src="bilder/pavilion.png" alt="Driftwood Pavilion">
       <h3>Driftwood Pavilion</h3>
       <p class="small">Festival installation - 2025</p>
 
@@ -73,12 +73,12 @@
     </div>
 
     <div class="project">
-      <img class="big-img" src="bilder/secondlife.png" alt="Second Life">
+      <img class="big-img" src="bilder/second-life.png" alt="Second Life">
       <h3>Second Life</h3>
       <p class="small">Pop-up exhibition - 2025</p>
 
       <div class="project-info">
-        <img src="/bilder/second-life-sketch.png" alt="Sketch of Second Life">
+        <img src="bilder/second-life-sketch.png" alt="Sketch of Second Life">
         <div>
           <p>A pop-up exhibition in an empty shop. Visitors walk through a maze of cardboard columns with objects on them.</p>
           <ul>
