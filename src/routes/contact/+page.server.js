@@ -1,5 +1,5 @@
 import { fail } from '@sveltejs/kit';
-import { messages } from '$lib/server/messages.js';
+import { messages } from '#lib/server/messages.js';
 
 // This page needs a running server to receive the form,
 // so it can't be turned into a static HTML file.

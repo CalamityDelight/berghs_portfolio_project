@@ -1,6 +1,6 @@
 <script>
-  import Header from '$lib/Header.svelte';
-  import Footer from '$lib/Footer.svelte';
+  import Header from '#lib/Header.svelte';
+  import Footer from '#lib/Footer.svelte';
 
   // `form` holds what the server action returned (success or an error)
   let { form } = $props();

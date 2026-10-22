@@ -1,6 +1,6 @@
 <script>
-  import Header from '$lib/Header.svelte';
-  import Footer from '$lib/Footer.svelte';
+  import Header from '#lib/Header.svelte';
+  import Footer from '#lib/Footer.svelte';
   // asset() and resolve() add the right start of the address,
   // so images and links also work on GitHub Pages
   import { asset, resolve } from '$app/paths';
