@@ -19,6 +19,11 @@ export default defineConfig({
 			// On GitHub Pages the site lives at /berghs_portfolio_project
 			paths: {
 				base: process.argv.includes('dev') ? '' : (process.env.BASE_PATH ?? '')
+			},
+
+			// A missing image shouldn't stop the whole site from building
+			prerender: {
+				handleHttpError: 'warn'
 			}
 		})
 	]
