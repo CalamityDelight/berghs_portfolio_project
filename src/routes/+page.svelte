@@ -29,6 +29,7 @@
       <p>Sam is a set and spatial designer from Stockholm. He worked as a carpenter before he started studying scenography, and he still builds most things himself in his workshop.</p>
       <p>He works with theatres, festivals and exhibition organisers. Almost everything he builds is made from old materials like floorboards, sails and window frames.</p>
     </div>
+    
   </section>
 
   <!-- work -->
@@ -159,7 +160,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
   }
 
   .logo {
