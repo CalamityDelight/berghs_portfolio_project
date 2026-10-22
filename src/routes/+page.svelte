@@ -23,7 +23,7 @@
 
   <!-- about -->
   <section id="about" class="about">
-    <img src="/bilder/sam.png" alt="Sam Rivera">
+    <img src="bilder/sam.png" alt="Sam Rivera">
     <div>
       <h2>About Sam</h2>
       <p>Sam is a set and spatial designer from Stockholm. He worked as a carpenter before he started studying scenography, and he still builds most things himself in his workshop.</p>
@@ -37,12 +37,12 @@
     <h2>Selected work</h2>
 
     <div class="project">
-      <img class="big-img" src="/bilder/salt-house.png" alt="The Salt House">
+      <img class="big-img" src="bilder/salt-house.png" alt="The Salt House">
       <h3>The Salt House</h3>
       <p class="small">Theatre set - 2026</p>
 
       <div class="project-info">
-        <img src="/bilder/salt-house-sketch.png" alt="Sketch of The Salt House">
+        <img src="bilder/saltsketch.png" alt="Sketch of The Salt House">
         <div>
           <p>A set for a family drama in a fishing village. The room slowly gets taken apart during the play until only the floor is left.</p>
           <ul>
@@ -55,12 +55,12 @@
     </div>
 
     <div class="project">
-      <img class="big-img" src="/bilder/pavilion.png" alt="Driftwood Pavilion">
+      <img class="big-img" src="bilder/paviliong.png" alt="Driftwood Pavilion">
       <h3>Driftwood Pavilion</h3>
       <p class="small">Festival installation - 2025</p>
 
       <div class="project-info">
-        <img src="/bilder/pavilion-sketch.png" alt="Sketch of Driftwood Pavilion">
+        <img src="bilder/pavilion-sketch.png" alt="Sketch of Driftwood Pavilion">
         <div>
           <p>A place for festival guests to sit in the shade. The roof is made of old sails that move in the wind.</p>
           <ul>
@@ -73,7 +73,7 @@
     </div>
 
     <div class="project">
-      <img class="big-img" src="/bilder/second-life.png" alt="Second Life">
+      <img class="big-img" src="bilder/secondlife.png" alt="Second Life">
       <h3>Second Life</h3>
       <p class="small">Pop-up exhibition - 2025</p>
 
