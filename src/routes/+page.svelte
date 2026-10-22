@@ -77,6 +77,7 @@
       <p class="small">Pop-up exhibition - 2025</p>
 
       <div class="project-info">
+        <img src="/bilder/second-life-sketch.png" alt="Sketch of Second Life">
         <div>
           <p>A pop-up exhibition in an empty shop. Visitors walk through a maze of cardboard columns with objects on them.</p>
           <ul>
@@ -146,5 +147,117 @@
   footer {
     padding: 20px;
     color: #666;
+  }
+
+  /* remove the white edge around the page */
+  :global(body) {
+    margin: 0;
+  }
+
+  /* header: logo to the left, menu to the right */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+  }
+
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  /* hero: big background image, text at the bottom */
+  .hero {
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('/bilder/hero.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+    margin: 0;
+  }
+
+  .hero p {
+    max-width: 500px;
+  }
+
+  /* about: image to the left, text to the right */
+  .about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about img {
+    width: 40%;
+  }
+
+  /* projects */
+  .project {
+    margin-bottom: 80px;
+  }
+
+  .big-img {
+    width: 100%;
+  }
+
+  .project h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  /* project info: sketch to the left, text to the right */
+  .project-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .project-info img {
+    width: 40%;
+  }
+
+  /* contact */
+  .contact {
+    text-align: center;
+    background-color: #1c1c1c;
+  }
+
+  .contact a {
+    font-size: 24px;
+  }
+
+  /* small screens: put things on top of each other */
+  @media (max-width: 700px) {
+    header,
+    section {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .about,
+    .project-info {
+      flex-direction: column;
+    }
+
+    .about img,
+    .project-info img {
+      width: 100%;
+    }
   }
 </style>
