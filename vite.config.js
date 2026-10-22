@@ -23,7 +23,8 @@ export default defineConfig({
 
 			// A missing image shouldn't stop the whole site from building
 			prerender: {
-				handleHttpError: 'warn'
+				handleHttpError: 'warn',
+				handleMissingId: 'warn'
 			}
 		})
 	]
